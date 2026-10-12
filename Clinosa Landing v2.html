@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Clinosa — A warmer way to run your veterinary clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles-v2.css" />
+<link rel="stylesheet" href="styles-v2-hero.css" />
+<link rel="stylesheet" href="styles-v2-sections.css" />
+</head>
+<body>
+<div class="page">
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <!-- Paw print mark -->
+            <circle cx="16" cy="20" r="7" fill="currentColor"/>
+            <ellipse cx="8" cy="11" rx="3" ry="3.6" fill="currentColor"/>
+            <ellipse cx="24" cy="11" rx="3" ry="3.6" fill="currentColor"/>
+            <ellipse cx="12.5" cy="6" rx="2.4" ry="3" fill="currentColor"/>
+            <ellipse cx="19.5" cy="6" rx="2.4" ry="3" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-name">Clinosa</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#problem">Why Clinosa</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#ai">AI</a>
+        <a href="#vision">Platform</a>
+        <a href="#partner">Partners</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="#partner">Sign in</a>
+        <a class="btn btn-primary" href="#partner">Book a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="hero-slot"></div>
+    <div id="problem-slot"></div>
+    <div id="workflows-slot"></div>
+    <div id="ai-slot"></div>
+    <div id="vision-slot"></div>
+    <div id="partner-slot"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none">
+              <circle cx="16" cy="20" r="7" fill="currentColor"/>
+              <ellipse cx="8" cy="11" rx="3" ry="3.6" fill="currentColor"/>
+              <ellipse cx="24" cy="11" rx="3" ry="3.6" fill="currentColor"/>
+              <ellipse cx="12.5" cy="6" rx="2.4" ry="3" fill="currentColor"/>
+              <ellipse cx="19.5" cy="6" rx="2.4" ry="3" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">Clinosa</span>
+        </div>
+        <p class="footer-tag">A warm, modern operating system for veterinary clinics. Built in the UK.</p>
+        <div class="footer-paws" aria-hidden="true">
+          <span>🐾</span><span>🐾</span><span>🐾</span>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-label">Product</div>
+          <a href="#workflows">Workflows</a>
+          <a href="#ai">AI</a>
+          <a href="#vision">Platform</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-label">Programme</div>
+          <a href="#partner">Design partners</a>
+          <a href="#partner">Book a demo</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-label">Company</div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-fineprint">
+      <span>© 2026 Clinosa Ltd · Registered in England &amp; Wales · Made with love for clinics 🐾</span>
+      <span class="mono">v0.4</span>
+    </div>
+  </footer>
+</div>
+
+<!-- Decorative paw scatter, sits behind everything -->
+<div class="paw-scatter" aria-hidden="true">
+  <span style="--x:8%;--y:14%;--r:-12deg;--s:1.1;">🐾</span>
+  <span style="--x:92%;--y:8%;--r:18deg;--s:0.9;">🐾</span>
+  <span style="--x:4%;--y:62%;--r:24deg;--s:1.2;">🐾</span>
+  <span style="--x:95%;--y:48%;--r:-22deg;--s:0.85;">🐾</span>
+  <span style="--x:14%;--y:88%;--r:8deg;--s:1.0;">🐾</span>
+  <span style="--x:88%;--y:92%;--r:-8deg;--s:1.05;">🐾</span>
+</div>
+
+<!-- Tweaks -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-v2.jsx"></script>
+
+<script>
+  (async () => {
+    const slots = ['hero','problem','workflows','ai','vision','partner'];
+    for (const id of slots) {
+      const res = await fetch(`section-v2-${id}.html`);
+      document.getElementById(`${id}-slot`).outerHTML = await res.text();
+    }
+    window.dispatchEvent(new Event('clinosa-ready'));
+  })();
+</script>
+</body>
+</html>

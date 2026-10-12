@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Clinosa — Clinic operations software for UK veterinary teams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles-v4.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h6l2-4 4 8 2-4h0"/>
+        </svg>
+      </span>
+      <span class="brand-name">Clinosa</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#workflows">Workflows</a>
+      <a href="#ai">AI</a>
+      <a href="#outcomes">Results</a>
+      <a href="#customers">Customers</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn-link" href="#">Sign in</a>
+      <a class="btn btn-accent" href="#cta">Book a demo
+        <svg class="ico-sm" viewBox="0 0 16 16"><path d="M4 8h8M9 5l3 3-3 3"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="section hero" id="product" data-screen-label="01 Hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow a"></div>
+  <div class="hero-glow b"></div>
+  <div class="hero-glow c"></div>
+
+  <div class="hero-inner">
+    <span class="eyebrow">AI operations layer for UK vet clinics</span>
+    <h1 class="hero-title">
+      Take control of your
+      <span class="rot-line">
+        <span class="rot" aria-hidden="true">
+          <span class="rot-track">
+            <span>estimates.</span>
+            <span>follow-ups.</span>
+            <span>payments.</span>
+            <span>portal.</span>
+            <span>estimates.</span>
+          </span>
+        </span>
+      </span>
+    </h1>
+    <p class="hero-sub">Clinosa is the operations layer for veterinary teams — sitting alongside your PMS to track approvals, payments, follow-ups and portal activity. So reception, nurses and vets always know what needs attention next.</p>
+    <div class="hero-cta">
+      <a class="btn btn-accent btn-lg" href="#cta">Book a demo
+        <svg class="ico-sm" viewBox="0 0 16 16"><path d="M4 8h8M9 5l3 3-3 3"/></svg>
+      </a>
+      <a class="btn btn-ghost btn-lg" href="#workflows">
+        <svg class="ico-sm" viewBox="0 0 16 16"><polygon points="5,3 13,8 5,13" fill="currentColor" stroke="none"/></svg>
+        Watch a 90-sec tour
+      </a>
+    </div>
+    <div class="hero-meta">
+      <span class="hero-meta-item">
+        <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+        Sits alongside your PMS
+      </span>
+      <span class="hero-meta-item">
+        <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+        UK-hosted &amp; GDPR
+      </span>
+      <span class="hero-meta-item">
+        <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+        Live in under a week
+      </span>
+    </div>
+  </div>
+
+  <!-- Dashboard preview -->
+  <div class="hero-product">
+    <div class="dashboard">
+      <div class="dash-chrome">
+        <div class="dash-traffic"><span></span><span></span><span></span></div>
+        <div class="dash-url"><span class="dash-url-host">clinosa.app</span><span class="dash-url-sep">/</span><span class="dash-url-path">Today — Riverside Veterinary</span></div>
+        <div class="dash-chrome-right">
+          <span class="pill ghost">
+            <svg class="ico-sm" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M5 8h6M8 5v6"/></svg>
+            Invite
+          </span>
+        </div>
+      </div>
+
+      <div class="dash-body">
+        <!-- Sidebar -->
+        <aside class="dash-side">
+          <div class="dash-workspace">
+            <div class="dash-ws-mark">RV</div>
+            <div>
+              <div class="dash-ws-name">Riverside Vets</div>
+              <div class="dash-ws-sub">3 vets · 12 staff</div>
+            </div>
+            <svg class="ico ico-sm dash-ws-caret" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4"/></svg>
+          </div>
+
+          <div class="dash-side-section">
+            <div class="dash-side-label">Workspace</div>
+            <a class="dash-side-item active">
+              <svg class="ico" viewBox="0 0 16 16"><rect x="3" y="3" width="10" height="10" rx="2"/><path d="M3 7h10"/></svg>
+              Today<span class="dash-count">12</span>
+            </a>
+            <a class="dash-side-item">
+              <svg class="ico" viewBox="0 0 16 16"><path d="M3 4h10M3 8h10M3 12h6"/></svg>
+              Attention queue<span class="dash-count accent">7</span>
+            </a>
+            <a class="dash-side-item">
+              <svg class="ico" viewBox="0 0 16 16"><rect x="2" y="4" width="12" height="8" rx="1.5"/><path d="M2 7h12M5 10h2"/></svg>
+              Payments<span class="dash-count warn">3</span>
+            </a>
+            <a class="dash-side-item">
+              <svg class="ico" viewBox="0 0 16 16"><path d="M3 3h7l3 3v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M10 3v3h3"/></svg>
+              Estimates
+            </a>
+            <a class="dash-side-item">
+              <svg class="ico" viewBox="0 0 16 16"><path d="M14 6a6 6 0 1 0-1 7"/><path d="M14 3v3h-3"/></svg>
+              Follow-ups
+            </a>
+            <a class="dash-side-item">
+              <svg class="ico" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="9" rx="1.5"/><path d="M2 6h12M6 12v2M10 12v2"/></svg>
+              Client portal
+            </a>
+          </div>
+
+          <div class="dash-side-section">
+            <div class="dash-side-label">AI Drafts</div>
+            <a class="dash-side-item subtle">
+              <svg class="ico" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12"/></svg>
+              Intake summaries<span class="dash-count">4</span>
+            </a>
+            <a class="dash-side-item subtle">
+              <svg class="ico" viewBox="0 0 16 16"><path d="M3 11h10M3 7h7M3 3h10"/></svg>
+              Follow-up messages<span class="dash-count">2</span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Main panel -->
+        <div class="dash-main">
+          <div class="dash-main-head">
+            <div>
+              <div class="dash-breadcrumb">
+                <span>Workspace</span>
+                <svg class="ico-sm" viewBox="0 0 16 16"><path d="m6 4 4 4-4 4"/></svg>
+                <span class="dash-bc-current">Today</span>
+              </div>
+              <h2 class="dash-h1">Today, Friday 15 May</h2>
+              <div class="dash-meta">7 items need attention · 5 drafts awaiting review</div>
+            </div>
+            <div class="dash-head-right">
+              <div class="seg">
+                <button class="seg-btn active">Today</button>
+                <button class="seg-btn">Week</button>
+                <button class="seg-btn">All</button>
+              </div>
+              <button class="dash-iconbtn" aria-label="Filter">
+                <svg class="ico" viewBox="0 0 16 16"><path d="M2 4h12l-4.5 5v4l-3 1V9z"/></svg>
+              </button>
+              <button class="dash-iconbtn" aria-label="Search">
+                <svg class="ico" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat">
+              <div class="stat-label">Attention queue</div>
+              <div class="stat-val">7<span class="stat-delta">+2</span></div>
+              <div class="stat-sub">items need a person</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Outstanding</div>
+              <div class="stat-val">£4,280</div>
+              <div class="stat-sub">11 invoices</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Estimates pending</div>
+              <div class="stat-val">4</div>
+              <div class="stat-sub">2 sent &gt; 24h</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Follow-ups due</div>
+              <div class="stat-val">9</div>
+              <div class="stat-sub">5 drafted by AI</div>
+            </div>
+          </div>
+
+          <div class="dash-cols">
+            <div class="dash-card">
+              <div class="dash-card-head">
+                <div class="dash-card-title">Attention queue</div>
+                <div class="dash-card-actions">
+                  <span class="pill ghost">Ranked</span>
+                  <button class="dash-textbtn">View all
+                    <svg class="ico-sm" viewBox="0 0 16 16"><path d="M4 8h8M9 5l3 3-3 3"/></svg>
+                  </button>
+                </div>
+              </div>
+              <ul class="queue">
+                <li class="queue-item">
+                  <span class="queue-sev danger"></span>
+                  <div class="queue-body">
+                    <div class="queue-title">Estimate unresponded — Bella Hughes</div>
+                    <div class="queue-meta">EST-1042 · £612.00 · Sent 2 days ago</div>
+                  </div>
+                  <div class="queue-act">
+                    <button class="dash-textbtn">Resend</button>
+                  </div>
+                </li>
+                <li class="queue-item">
+                  <span class="queue-sev warn"></span>
+                  <div class="queue-body">
+                    <div class="queue-title">Discharge follow-up overdue — Milo Patel</div>
+                    <div class="queue-meta">FUP-318 · Post-op day 4 · AI draft ready</div>
+                  </div>
+                  <div class="queue-act">
+                    <button class="dash-textbtn primary">Review draft</button>
+                  </div>
+                </li>
+                <li class="queue-item">
+                  <span class="queue-sev warn"></span>
+                  <div class="queue-body">
+                    <div class="queue-title">Outstanding invoice — Tilly McCarthy</div>
+                    <div class="queue-meta">INV-2901 · £184.50 · 14 days outstanding</div>
+                  </div>
+                  <div class="queue-act">
+                    <button class="dash-textbtn">Chase</button>
+                  </div>
+                </li>
+                <li class="queue-item">
+                  <span class="queue-sev"></span>
+                  <div class="queue-body">
+                    <div class="queue-title">Portal message — Otis Reid, diet question</div>
+                    <div class="queue-meta">MSG-77 · 38 min ago · Unassigned</div>
+                  </div>
+                  <div class="queue-act">
+                    <button class="dash-textbtn">Assign</button>
+                  </div>
+                </li>
+                <li class="queue-item">
+                  <span class="queue-sev"></span>
+                  <div class="queue-body">
+                    <div class="queue-title">No-show risk — 2 appointments tomorrow</div>
+                    <div class="queue-meta">APT-Tue · Unconfirmed by owners</div>
+                  </div>
+                  <div class="queue-act">
+                    <button class="dash-textbtn">Remind</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dash-stack">
+              <div class="dash-card">
+                <div class="dash-card-head">
+                  <div class="dash-card-title">Estimate approval</div>
+                  <span class="pill warn"><span class="dot"></span>Owner viewed</span>
+                </div>
+                <div class="est">
+                  <div class="est-row">
+                    <span class="est-pet">Cooper — dental extraction</span>
+                    <span class="est-amount">£684.00</span>
+                  </div>
+                  <div class="est-bar">
+                    <div class="est-step done">Drafted</div>
+                    <div class="est-step done">Sent</div>
+                    <div class="est-step current">Viewed</div>
+                    <div class="est-step">Approved</div>
+                    <div class="est-step">Deposit</div>
+                  </div>
+                  <div class="est-foot mono">EST-1051 · Sent 14:02 · Viewed 16:48</div>
+                </div>
+              </div>
+
+              <div class="dash-card">
+                <div class="dash-card-head">
+                  <div class="dash-card-title">AI draft</div>
+                  <span class="pill accent"><span class="dot"></span>Ready for review</span>
+                </div>
+                <div class="ai-draft">
+                  <div class="ai-draft-meta">Follow-up · Milo Patel · post-op day 4</div>
+                  <div class="ai-draft-body">"Hi Anna — checking in on Milo after Wednesday's procedure. How is he doing with the new pain relief schedule? Reply here or call us anytime."</div>
+                  <div class="ai-draft-actions">
+                    <button class="dash-textbtn primary">Approve &amp; send</button>
+                    <button class="dash-textbtn">Edit</button>
+                    <button class="dash-textbtn subtle">Discard</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo strip / marquee -->
+  <div class="logo-strip">
+    <div class="logo-strip-label">Trusted by independent clinics across the UK</div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-item">Riverside Vets</span>
+        <span class="marquee-item">Highgate Animal Hospital</span>
+        <span class="marquee-item">Northfield Veterinary</span>
+        <span class="marquee-item">Bramble &amp; Co.</span>
+        <span class="marquee-item">Quayside Pet Clinic</span>
+        <span class="marquee-item">Linden Practice</span>
+        <span class="marquee-item">Forester Veterinary</span>
+        <span class="marquee-item">Mossfield Animal Care</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item">Riverside Vets</span>
+        <span class="marquee-item">Highgate Animal Hospital</span>
+        <span class="marquee-item">Northfield Veterinary</span>
+        <span class="marquee-item">Bramble &amp; Co.</span>
+        <span class="marquee-item">Quayside Pet Clinic</span>
+        <span class="marquee-item">Linden Practice</span>
+        <span class="marquee-item">Forester Veterinary</span>
+        <span class="marquee-item">Mossfield Animal Care</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPLIT — Reception side / Clinical side ============ -->
+<section class="split-section" id="workflows" data-screen-label="02 Workflows">
+  <div class="split-bg"></div>
+  <div class="split-head">
+    <span class="eyebrow">Built for the whole team</span>
+    <h2 class="section-title">One platform.<br/><em>Reception and clinical, in sync.</em></h2>
+    <p class="section-sub" style="margin-inline:auto">Reception loses estimates in chaser threads. Vets lose follow-ups in Post-it notes. Clinosa replaces both with a queue everyone can see — and AI drafts that nobody has to write from scratch.</p>
+  </div>
+
+  <div class="split-grid">
+    <!-- Reception card -->
+    <div class="split-card">
+      <span class="split-card-eyebrow">Reception side</span>
+      <h3 class="split-card-title">Every estimate, payment and portal message — on one queue, ranked by what to do next.</h3>
+      <ul class="split-list">
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Estimate status (sent, viewed, approved, deposit) at a glance
+        </li>
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Auto-chase outstanding invoices with branded SMS &amp; email
+        </li>
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Portal messages routed to the right person, not a shared inbox
+        </li>
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          No-show risk surfaced 24 h before, with one-click reminders
+        </li>
+      </ul>
+
+      <div class="split-mock">
+        <div class="mock-card">
+          <div class="mock-head">
+            <div class="mock-title">Attention queue · Reception</div>
+            <span class="pill ghost">Ranked</span>
+          </div>
+          <div class="mock-row">
+            <div>
+              <div class="mock-row-title">Estimate unresponded — Bella Hughes</div>
+              <div class="mock-row-meta">EST-1042 · £612 · Sent 2d ago</div>
+            </div>
+            <div class="mock-row-right">
+              <span class="queue-sev danger"></span>Urgent
+            </div>
+          </div>
+          <div class="mock-row">
+            <div>
+              <div class="mock-row-title">Invoice 14 days late — Tilly McCarthy</div>
+              <div class="mock-row-meta">INV-2901 · £184.50</div>
+            </div>
+            <div class="mock-row-right">
+              <span class="queue-sev warn"></span>Chase
+            </div>
+          </div>
+          <div class="mock-row">
+            <div>
+              <div class="mock-row-title">Portal · diet question — Otis Reid</div>
+              <div class="mock-row-meta">MSG-77 · Unassigned · 38 min</div>
+            </div>
+            <div class="mock-row-right">
+              <span class="queue-sev"></span>Assign
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clinical card -->
+    <div class="split-card">
+      <span class="split-card-eyebrow">Clinical side</span>
+      <h3 class="split-card-title">AI drafts intake summaries and follow-ups. Vets review and send — never write from blank.</h3>
+      <ul class="split-list">
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Intake form &amp; history → one-paragraph summary before the consult
+        </li>
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Post-op follow-ups drafted on day 2, 7, 14 — your clinic's tone
+        </li>
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Nurse handover notes generated from procedure timeline
+        </li>
+        <li class="split-list-item">
+          <svg class="ico-sm" viewBox="0 0 16 16"><path d="m3 8 3 3 7-7"/></svg>
+          Every draft requires a human approval — auditable trail
+        </li>
+      </ul>
+
+      <div class="split-mock">
+        <div class="mock-card">
+          <div class="mock-head">
+            <div class="mock-title">AI follow-up · Milo Patel</div>
+            <span class="pill accent"><span class="dot"></span>Drafted</span>
+          </div>
+          <div class="bubble">
+            <div class="bubble-meta">CONTEXT · post-op day 4 · neutering</div>
+            Pain relief: meloxicam 1.5 mg/ml, 0.5 ml PO once daily for 5 days.<br/>
+            Owner: Anna Patel · last contact: discharge call 11 May.
+          </div>
+          <div class="bubble ai">
+            <div class="bubble-meta" style="color: var(--accent-3); opacity:.9">CLINOSA DRAFT — review before sending</div>
+            "Hi Anna — checking in on Milo after Wednesday's procedure. How is he doing on the pain relief schedule, and is the wound staying clean? Reply here or call us anytime."
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUTCOMES ============ -->
+<section class="outcome-section" id="outcomes" data-screen-label="03 Outcomes">
+  <div class="section-inner section-head-center">
+    <span class="eyebrow">Real numbers from real clinics</span>
+    <h2 class="section-title" style="margin-inline:auto">The kind of change you<br/><em>actually feel by Friday.</em></h2>
+    <p class="section-sub" style="margin-inline:auto">After 8 weeks with Clinosa, the clinics we work with see fewer dropped estimates, faster payment turnaround, and a queue that empties itself.</p>
+  </div>
+  <div class="outcome-grid">
+    <div class="outcome">
+      <div class="outcome-stat">+38<span class="unit">%</span></div>
+      <div class="outcome-label">Estimate approval rate</div>
+      <div class="outcome-sub">Owners reply faster when estimates land with itemised pricing and a single tap to approve.</div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-stat">14<span class="unit">hrs/wk</span></div>
+      <div class="outcome-label">Reclaimed across reception</div>
+      <div class="outcome-sub">Auto-chases and AI follow-up drafts replace the ad-hoc work that used to fill quiet moments.</div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-stat">&lt;6<span class="unit">days</span></div>
+      <div class="outcome-label">From sign-up to live</div>
+      <div class="outcome-sub">Connects to your PMS in an afternoon. Your team is using it before the weekend.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="customers" data-screen-label="04 Customers">
+  <div class="section-inner section-head-center">
+    <span class="eyebrow">Customers</span>
+    <h2 class="section-title" style="margin-inline:auto">Clinics that switched, <em>and stayed.</em></h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <div class="testimonial-quote">"Reception used to lose half a day chasing estimates. Now Clinosa pings the owners and tells us who to call. The queue is the first thing we open and the last thing we close."</div>
+      <div class="testimonial-foot">
+        <div class="testimonial-avatar">SD</div>
+        <div>
+          <div class="testimonial-name">Sara Donovan</div>
+          <div class="testimonial-role">Practice manager · Riverside Vets, Edinburgh</div>
+        </div>
+        <div class="testimonial-badge">+£18k / quarter recovered</div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-quote">"Follow-ups used to be the thing I felt worst about — owners I didn't get back to. Clinosa drafts each one in our tone; I read it, tweak a sentence, send. Day 7 check-ins haven't slipped in months."</div>
+      <div class="testimonial-foot">
+        <div class="testimonial-avatar">JM</div>
+        <div>
+          <div class="testimonial-name">Dr James Mehta</div>
+          <div class="testimonial-role">Lead vet · Highgate Animal Hospital, Bristol</div>
+        </div>
+        <div class="testimonial-badge">96% post-op contact</div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-quote">"We tried to build something like this in a spreadsheet for two years. Clinosa replaced it in a week and our nurses actually use it. The PMS still does PMS things; Clinosa does the rest."</div>
+      <div class="testimonial-foot">
+        <div class="testimonial-avatar">RP</div>
+        <div>
+          <div class="testimonial-name">Rhian Parry</div>
+          <div class="testimonial-role">Owner · Linden Practice, Cardiff</div>
+        </div>
+        <div class="testimonial-badge">3 sites · 22 staff</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band" id="cta" data-screen-label="05 CTA">
+  <div class="cta-band-inner">
+    <span class="eyebrow">Book a demo</span>
+    <h2 class="cta-band-title">See your clinic's <em>Friday afternoon</em> in Clinosa.</h2>
+    <p class="cta-band-sub">30 minutes. We'll set up a sandbox with anonymised data from a clinic your size, and walk you through what your team would actually see.</p>
+    <div class="cta-band-cta">
+      <a class="btn btn-accent btn-lg" href="#">Book a demo
+        <svg class="ico-sm" viewBox="0 0 16 16"><path d="M4 8h8M9 5l3 3-3 3"/></svg>
+      </a>
+      <a class="btn btn-ghost btn-lg" href="#">Read the security brief</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h6l2-4 4 8 2-4h0"/>
+          </svg>
+        </span>
+        <span class="brand-name">Clinosa</span>
+      </a>
+      <p class="footer-tag">Clinic operations software for UK veterinary teams. UK-hosted, GDPR-aligned, built with vets.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-label">Product</div>
+        <a href="#workflows">Workflows</a>
+        <a href="#ai">AI drafts</a>
+        <a href="#">Portal</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Company</div>
+        <a href="#">About</a>
+        <a href="#">Customers</a>
+        <a href="#">Security</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Resources</div>
+        <a href="#">Pricing</a>
+        <a href="#">Onboarding guide</a>
+        <a href="#">PMS compatibility</a>
+        <a href="#">Help centre</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-fineprint">
+    <span>© 2026 Clinosa Ltd. Registered in England &amp; Wales.</span>
+    <span class="mono">UK-hosted · GDPR · ICO ZB7-92841</span>
+  </div>
+</footer>
+
+<!-- Tweaks panel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-v4.jsx"></script>
+
+</body>
+</html>
